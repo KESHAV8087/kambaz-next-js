@@ -26,6 +26,7 @@ export default function Dashboard() {
             <Link href={`/courses/${c.id}/home`} className="wd-dashboard-course-link">
               <h3 className="wd-dashboard-course-title">{c.name}</h3>
               <p className="wd-dashboard-course-description">{c.desc}</p>
+              <button type="button">Go</button>
             </Link>
           </div>
         ))}

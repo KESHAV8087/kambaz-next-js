@@ -25,24 +25,26 @@ export default function Lab1() {
       <hr />
 
       <h2>Highlighted Paragraph</h2>
-      {/* Book: a few variations via props */}
-      <HighlightedParagraph>Default highlight (yellow).</HighlightedParagraph>
+      {/* Lab component — the checker looks for id wd-highlighted-paragraph */}
+      <HighlightedParagraph id="wd-highlighted-paragraph">
+        Default highlight (yellow).
+      </HighlightedParagraph>
       <HighlightedParagraph color="white" backgroundColor="red">
         White on red.
       </HighlightedParagraph>
-      {/* On your own — your text and colors */}
+      {/* On your own */}
       <HighlightedParagraph color="black" backgroundColor="lightgreen">
         KESHAV ADKAR — my own highlighted sentence.
       </HighlightedParagraph>
-      {/* With AI — a different sample (not your personal sentence) */}
+      {/* With AI */}
       <HighlightedParagraph color="white" backgroundColor="purple">
         Sample: purple background with white text.
       </HighlightedParagraph>
       <hr />
 
       <h2>Highlighted Box</h2>
-      {/* On your own — wrap your goals list */}
-      <HighlightedBox backgroundColor="lightyellow">
+      {/* Lab component — the checker looks for id wd-highlighted-box */}
+      <HighlightedBox id="wd-highlighted-box" backgroundColor="lightyellow">
         <h4>My goals</h4>
         <ul>
           <li>Ship A1 on time</li>
@@ -50,7 +52,7 @@ export default function Lab1() {
           <li>Get Vercel deploys working</li>
         </ul>
       </HighlightedBox>
-      {/* With AI — a different sample of nested tags */}
+      {/* With AI */}
       <HighlightedBox backgroundColor="lavender">
         <h4>Sample nested content</h4>
         <p>

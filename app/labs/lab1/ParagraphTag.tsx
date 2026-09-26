@@ -1,17 +1,17 @@
 export default function ParagraphTag() {
   return (
-    <div id="wd-paragraph-tag">
-      {/* Book sample: wrapping text in <p> creates vertical spacing */}
-      <p>
+    <div id="wd-p-tag">
+      {/* Book sample paragraphs */}
+      <p id="wd-p-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
         eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
       </p>
-      <p>
+      <p id="wd-p-2">
         Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta
         lobortis sit amet at magna.
       </p>
 
-      {/* On your own — two personal paragraphs */}
+      {/* On your own */}
       <p id="wd-p-your-1">
         Hi, I&apos;m KESHAV ADKAR. I&apos;m taking this course to get comfortable
         building full web applications from the browser all the way to a database.

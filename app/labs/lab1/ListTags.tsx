@@ -1,9 +1,9 @@
 export default function ListTags() {
   return (
-    <div id="wd-list-tags">
-      {/* Book sample: ordered list of pancake steps */}
+    <div id="wd-lists">
+      {/* Book sample: pancake ordered list */}
       <h4>How to make pancakes</h4>
-      <ol>
+      <ol id="wd-pancakes">
         <li>Mix the dry ingredients</li>
         <li>Add the wet ingredients</li>
         <li>Whisk until smooth</li>
@@ -20,7 +20,7 @@ export default function ListTags() {
         <li>Butter</li>
       </ul>
 
-      {/* On your own — favorite recipe (ordered) */}
+      {/* On your own */}
       <h4>My favorite recipe</h4>
       <ol id="wd-your-favorite-recipe">
         <li>Boil the pasta</li>
@@ -29,7 +29,6 @@ export default function ListTags() {
         <li>Finish with parmesan and pepper</li>
       </ol>
 
-      {/* On your own — favorite books (unordered) */}
       <h4>My favorite books</h4>
       <ul id="wd-your-books">
         <li>The Pragmatic Programmer</li>
@@ -37,7 +36,7 @@ export default function ListTags() {
         <li>Educated</li>
       </ul>
 
-      {/* With AI — at least five HTML tags from this chapter */}
+      {/* With AI */}
       <h4>HTML tags from this chapter</h4>
       <ul id="wd-ai-html-tags">
         <li>&lt;h1&gt;–&lt;h6&gt; — headings</li>

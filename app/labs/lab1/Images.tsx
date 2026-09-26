@@ -4,6 +4,7 @@ export default function Images() {
       {/* Book sample: remote Starship image */}
       <h4>Remote image (SpaceX Starship)</h4>
       <img
+        id="wd-starship"
         src="https://upload.wikimedia.org/wikipedia/commons/9/98/Starship_SN15_landing.jpg"
         alt="SpaceX Starship"
         width={300}
@@ -11,7 +12,7 @@ export default function Images() {
 
       {/* Book sample: local image from /public/images */}
       <h4>Local image (Tesla bot)</h4>
-      <img src="/images/teslabot.png" alt="Tesla bot" width={300} />
+      <img id="wd-teslabot" src="/images/teslabot.png" alt="Tesla bot" width={300} />
 
       {/* On your own */}
       <h4>An image I chose</h4>
@@ -22,7 +23,7 @@ export default function Images() {
         width={300}
       />
 
-      {/* With AI — an extra sample image from a public URL */}
+      {/* With AI */}
       <h4>AI sample image</h4>
       <img
         id="wd-ai-image"

@@ -1,15 +1,16 @@
-// Wraps nested children with the same style props.
 export default function HighlightedBox({
   children,
+  id,
   color = "black",
   backgroundColor = "lightblue",
 }: {
   children: React.ReactNode;
+  id?: string;
   color?: string;
   backgroundColor?: string;
 }) {
   return (
-    <div style={{ color, backgroundColor, padding: 8 }}>
+    <div id={id} style={{ color, backgroundColor, padding: 8 }}>
       {children}
     </div>
   );

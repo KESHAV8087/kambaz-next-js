@@ -1,6 +1,6 @@
 export default function HeadingTags() {
   return (
-    <div id="wd-heading-tags">
+    <div id="wd-h-tag">
       {/* Book sample — do not remove this text */}
       <h4>Heading Tags</h4>
       <p>
@@ -9,7 +9,7 @@ export default function HeadingTags() {
         h6, the least important.
       </p>
 
-      {/* Practice: h1–h6 (added before the "With AI" step) */}
+      {/* Practice: h1–h6 */}
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
       <h3>Heading 3</h3>
@@ -22,7 +22,7 @@ export default function HeadingTags() {
         My name is <span id="wd-your-span">KESHAV ADKAR</span>
       </h2>
 
-      {/* With AI — sample outline (keep the book sample text above) */}
+      {/* With AI */}
       <div id="wd-ai-headings">
         <h4>Lab notes</h4>
         <h5>What I built</h5>
