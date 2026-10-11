@@ -6,12 +6,14 @@
 /* ===== Color ===== */
 .wd-color { color: crimson; }
 
-/* ===== Background colors (§2.1.8) — only background-color declared ===== */
-.wd-bg-red { background-color: red; }
-.wd-bg-green { background-color: lightgreen; }
-.wd-bg-blue { background-color: lightblue; }
-.wd-bg-orange { background-color: orange; }
-.wd-bg-purple { background-color: plum; }
+/* ===== Background colors (2.1.8), exact book values ===== */
+.wd-bg-color-yellow { background-color: #ffff07; }
+.wd-bg-color-blue { background-color: #7070ff; }
+.wd-bg-color-red { background-color: #ff7070; }
+.wd-bg-color-green { background-color: green; }
+.wd-bg-color-gray { background-color: lightgray; }
+.wd-fg-color-white { color: white; }
+.wd-fg-color-black { color: black; }
 
 /* ===== Border ===== */
 .wd-border { border: 3px solid navy; }

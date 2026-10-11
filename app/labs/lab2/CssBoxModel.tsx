@@ -1,3 +1,5 @@
+import BackgroundColors from "./BackgroundColors";
+
 export default function CssBoxModel() {
   return (
     <div id="wd-css-colors">
@@ -6,12 +8,7 @@ export default function CssBoxModel() {
       <h4>Color</h4>
       <p className="wd-color">Text in crimson.</p>
 
-      <h4>Background colors</h4>
-      <div className="wd-bg-red">red background</div>
-      <div className="wd-bg-green">green background</div>
-      <div className="wd-bg-blue">blue background</div>
-      <div className="wd-bg-orange">orange background</div>
-      <div className="wd-bg-purple">purple background</div>
+      <BackgroundColors />
 
       <h4>Border</h4>
       <div className="wd-border">bordered box</div>
