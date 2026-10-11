@@ -7,11 +7,11 @@ export default function CssBoxModel() {
       <p className="wd-color">Text in crimson.</p>
 
       <h4>Background colors</h4>
-      <div className="wd-bg-block wd-bg-red">red</div>
-      <div className="wd-bg-block wd-bg-green">green</div>
-      <div className="wd-bg-block wd-bg-blue">blue</div>
-      <div className="wd-bg-block wd-bg-orange">orange</div>
-      <div className="wd-bg-block wd-bg-purple">purple</div>
+      <div className="wd-bg-red">red background</div>
+      <div className="wd-bg-green">green background</div>
+      <div className="wd-bg-blue">blue background</div>
+      <div className="wd-bg-orange">orange background</div>
+      <div className="wd-bg-purple">purple background</div>
 
       <h4>Border</h4>
       <div className="wd-border">bordered box</div>

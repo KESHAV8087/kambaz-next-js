@@ -6,13 +6,12 @@
 /* ===== Color ===== */
 .wd-color { color: crimson; }
 
-/* ===== Background colors (§2.1.8) — solid color blocks ===== */
-.wd-bg-block { width: 260px; height: 44px; line-height: 44px; text-align: center; color: white; margin-bottom: 6px; }
+/* ===== Background colors (§2.1.8) — only background-color declared ===== */
 .wd-bg-red { background-color: red; }
-.wd-bg-green { background-color: green; }
-.wd-bg-blue { background-color: blue; }
-.wd-bg-orange { background-color: orange; color: black; }
-.wd-bg-purple { background-color: purple; }
+.wd-bg-green { background-color: lightgreen; }
+.wd-bg-blue { background-color: lightblue; }
+.wd-bg-orange { background-color: orange; }
+.wd-bg-purple { background-color: plum; }
 
 /* ===== Border ===== */
 .wd-border { border: 3px solid navy; }
