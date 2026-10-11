@@ -1,38 +1,86 @@
 /* ===== Selectors ===== */
-/* id selector */
 #wd-id-selector { color: red; }
-/* class selector */
 .wd-class-selector { color: green; font-weight: bold; }
-/* document-structure (descendant) selector */
 .wd-structure p { color: blue; }
 
-/* ===== Color, background, border, box model ===== */
-.wd-fg-color { color: white; }
-.wd-bg-color { background-color: #0a6ebd; }
+/* ===== Color ===== */
+.wd-color { color: crimson; }
+
+/* ===== Background colors (several distinct swatches) ===== */
+.wd-bg-red { background-color: red; color: white; padding: 10px; }
+.wd-bg-green { background-color: green; color: white; padding: 10px; }
+.wd-bg-blue { background-color: blue; color: white; padding: 10px; }
+.wd-bg-orange { background-color: orange; padding: 10px; }
+.wd-bg-purple { background-color: purple; color: white; padding: 10px; }
+
+/* ===== Border ===== */
 .wd-border { border: 3px solid navy; }
-.wd-padding { padding: 20px; }
-.wd-margin { margin: 20px; }
-.wd-corner { border-radius: 12px; }
-.wd-dimension { width: 240px; height: 80px; }
-.wd-display-inline { display: inline; }
-.wd-display-block { display: block; }
-.wd-box {
-  background-color: lightyellow;
-  border: 2px dashed darkorange;
-  padding: 16px;
-  margin: 12px;
-  border-radius: 10px;
-  width: 300px;
+
+/* ===== Padding ===== */
+.wd-padding { padding: 24px; background-color: #eee; }
+
+/* ===== Margin ===== */
+.wd-margin { margin: 24px; background-color: #eee; }
+
+/* ===== Box model (content + padding + border + margin all visible) ===== */
+.wd-box-model {
+  width: 220px;
+  height: 80px;
+  padding: 20px;
+  border: 5px solid navy;
+  margin: 20px;
+  background-color: lightblue;
 }
 
-/* ===== Position, z-index, float, grid, flex ===== */
-.wd-relative { position: relative; top: 10px; left: 10px; background: #eee; }
-.wd-absolute-parent { position: relative; height: 90px; border: 1px solid #ccc; }
-.wd-absolute-child { position: absolute; top: 8px; right: 8px; background: salmon; padding: 6px; z-index: 5; }
+/* ===== Corner ===== */
+.wd-corner { border-radius: 16px; background-color: #0a6ebd; color: white; padding: 16px; width: 220px; }
+
+/* ===== Dimension ===== */
+.wd-dimension { width: 260px; height: 90px; background-color: lightyellow; border: 1px solid #ccc; }
+
+/* ===== Display ===== */
+.wd-display-inline { display: inline; background: #ddd; }
+.wd-display-block { display: block; background: #ccc; padding: 6px; }
+
+/* ===== Position: relative ===== */
+.wd-relative { position: relative; top: 10px; left: 10px; background: #eee; padding: 8px; width: 240px; }
+
+/* ===== Position: absolute (child in a relative parent) ===== */
+.wd-abs-parent { position: relative; height: 120px; border: 1px solid #999; }
+.wd-abs-child {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 140px;
+  height: 60px;
+  background: salmon;
+  padding: 6px;
+}
+
+/* ===== Position: fixed ===== */
+.wd-fixed {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  background: gold;
+  border: 1px solid #333;
+  padding: 10px;
+  z-index: 50;
+}
+
+/* ===== z-index ===== */
+.wd-z-base { position: relative; z-index: 1; background: lightgreen; width: 120px; height: 60px; }
+.wd-z-top { position: relative; z-index: 10; background: tomato; width: 120px; height: 60px; margin-top: -30px; margin-left: 30px; }
+
+/* ===== Float ===== */
 .wd-float-left { float: left; width: 120px; height: 60px; background: lightgreen; margin-right: 10px; }
 .wd-float-clear { clear: both; }
+
+/* ===== Flex ===== */
 .wd-flex { display: flex; gap: 12px; }
 .wd-flex > div { background: lightblue; padding: 10px; flex: 1; }
+
+/* ===== Grid ===== */
 .wd-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .wd-grid > div { background: lavender; padding: 10px; text-align: center; }
 

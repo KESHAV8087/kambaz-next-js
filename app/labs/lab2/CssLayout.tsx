@@ -1,13 +1,24 @@
 export default function CssLayout() {
   return (
-    <div id="wd-css-layout">
-      <h3>Position, z-index, float, grid, flex, media query</h3>
+    <div id="wd-css-positions">
+      <h3>Position, float, flex, and media queries</h3>
 
-      <h4>Position + z-index</h4>
-      <div className="wd-relative">position: relative (nudged)</div>
-      <div className="wd-absolute-parent">
-        <div className="wd-absolute-child">absolute, z-index 5</div>
+      <h4>Position: relative</h4>
+      <div className="wd-relative">relative (nudged down and right)</div>
+
+      <h4>Position: absolute</h4>
+      <div className="wd-abs-parent">
         relative parent
+        <div className="wd-abs-child">absolute child</div>
+      </div>
+
+      <h4>Position: fixed</h4>
+      <div className="wd-fixed">fixed box (stays on screen)</div>
+
+      <h4>z-index</h4>
+      <div>
+        <div className="wd-z-base">z-index 1</div>
+        <div className="wd-z-top">z-index 10</div>
       </div>
 
       <h4>Float</h4>
