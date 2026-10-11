@@ -1,0 +1,43 @@
+/* ===== Selectors ===== */
+/* id selector */
+#wd-id-selector { color: red; }
+/* class selector */
+.wd-class-selector { color: green; font-weight: bold; }
+/* document-structure (descendant) selector */
+.wd-structure p { color: blue; }
+
+/* ===== Color, background, border, box model ===== */
+.wd-fg-color { color: white; }
+.wd-bg-color { background-color: #0a6ebd; }
+.wd-border { border: 3px solid navy; }
+.wd-padding { padding: 20px; }
+.wd-margin { margin: 20px; }
+.wd-corner { border-radius: 12px; }
+.wd-dimension { width: 240px; height: 80px; }
+.wd-display-inline { display: inline; }
+.wd-display-block { display: block; }
+.wd-box {
+  background-color: lightyellow;
+  border: 2px dashed darkorange;
+  padding: 16px;
+  margin: 12px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* ===== Position, z-index, float, grid, flex ===== */
+.wd-relative { position: relative; top: 10px; left: 10px; background: #eee; }
+.wd-absolute-parent { position: relative; height: 90px; border: 1px solid #ccc; }
+.wd-absolute-child { position: absolute; top: 8px; right: 8px; background: salmon; padding: 6px; z-index: 5; }
+.wd-float-left { float: left; width: 120px; height: 60px; background: lightgreen; margin-right: 10px; }
+.wd-float-clear { clear: both; }
+.wd-flex { display: flex; gap: 12px; }
+.wd-flex > div { background: lightblue; padding: 10px; flex: 1; }
+.wd-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.wd-grid > div { background: lavender; padding: 10px; text-align: center; }
+
+/* ===== Media query ===== */
+.wd-media { background: tomato; padding: 10px; color: white; }
+@media (min-width: 768px) {
+  .wd-media { background: seagreen; }
+}
