@@ -6,12 +6,13 @@
 /* ===== Color ===== */
 .wd-color { color: crimson; }
 
-/* ===== Background colors (several distinct swatches) ===== */
-.wd-bg-red { background-color: red; color: white; padding: 10px; }
-.wd-bg-green { background-color: green; color: white; padding: 10px; }
-.wd-bg-blue { background-color: blue; color: white; padding: 10px; }
-.wd-bg-orange { background-color: orange; padding: 10px; }
-.wd-bg-purple { background-color: purple; color: white; padding: 10px; }
+/* ===== Background colors (§2.1.8) — solid color blocks ===== */
+.wd-bg-block { width: 260px; height: 44px; line-height: 44px; text-align: center; color: white; margin-bottom: 6px; }
+.wd-bg-red { background-color: red; }
+.wd-bg-green { background-color: green; }
+.wd-bg-blue { background-color: blue; }
+.wd-bg-orange { background-color: orange; color: black; }
+.wd-bg-purple { background-color: purple; }
 
 /* ===== Border ===== */
 .wd-border { border: 3px solid navy; }
@@ -22,15 +23,13 @@
 /* ===== Margin ===== */
 .wd-margin { margin: 24px; background-color: #eee; }
 
-/* ===== Box model (content + padding + border + margin all visible) ===== */
-.wd-box-model {
-  width: 220px;
-  height: 80px;
-  padding: 20px;
-  border: 5px solid navy;
-  margin: 20px;
-  background-color: lightblue;
-}
+/* ===== Box model (§2.1.10) — nested layers: gray margin, red border, blue padding, green content ===== */
+.wd-bm-parent { background-color: lightgray; display: inline-block; }
+.wd-bm-box { margin: 20px; border: 10px solid red; padding: 20px; background-color: lightblue; }
+.wd-bm-content { background-color: green; width: 140px; height: 80px; }
+/* box-sizing pair: both 200x180 with 20 padding + 10 border */
+.wd-content-box { box-sizing: content-box; width: 200px; height: 180px; padding: 20px; border: 10px solid navy; margin-bottom: 10px; background-color: lightyellow; }
+.wd-border-box { box-sizing: border-box; width: 200px; height: 180px; padding: 20px; border: 10px solid navy; background-color: lightyellow; }
 
 /* ===== Corner ===== */
 .wd-corner { border-radius: 16px; background-color: #0a6ebd; color: white; padding: 16px; width: 220px; }
