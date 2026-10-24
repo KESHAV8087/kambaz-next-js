@@ -1,0 +1,6 @@
+[
+  { "_id": "1", "title": "Learn JavaScript", "done": true, "status": "COMPLETED" },
+  { "_id": "2", "title": "Learn React", "done": false, "status": "IN PROGRESS" },
+  { "_id": "3", "title": "Build Kambaz", "done": false, "status": "IN PROGRESS" },
+  { "_id": "4", "title": "Deploy to Vercel", "done": true, "status": "COMPLETED" }
+]

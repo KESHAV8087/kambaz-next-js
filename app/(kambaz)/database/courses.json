@@ -1,0 +1,6 @@
+[
+  { "_id": "RS101", "name": "Rocket Propulsion", "number": "RS4550", "startDate": "2026-01-10", "endDate": "2026-05-15", "department": "D123", "credits": 4, "description": "Fundamentals of rocket propulsion, fuels, and thrust." },
+  { "_id": "RS102", "name": "Aerodynamics", "number": "RS4560", "startDate": "2026-01-10", "endDate": "2026-05-15", "department": "D123", "credits": 3, "description": "Airflow, lift, and drag around flight vehicles." },
+  { "_id": "RS103", "name": "Spacecraft Design", "number": "RS4570", "startDate": "2026-01-10", "endDate": "2026-05-15", "department": "D123", "credits": 4, "description": "Designing spacecraft structures and subsystems." },
+  { "_id": "RS104", "name": "Orbital Mechanics", "number": "RS4580", "startDate": "2026-01-10", "endDate": "2026-05-15", "department": "D123", "credits": 3, "description": "Orbits, transfers, and trajectory planning." }
+]

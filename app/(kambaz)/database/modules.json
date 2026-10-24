@@ -1,0 +1,29 @@
+[
+  { "_id": "M101", "name": "Introduction to Rocket Propulsion", "description": "Basic principles of rocket propulsion.", "course": "RS101",
+    "lessons": [
+      { "_id": "L101", "name": "History of Rocketry", "description": "From early rockets to modern launchers.", "module": "M101" },
+      { "_id": "L102", "name": "Newton's Third Law", "description": "Action, reaction, and thrust.", "module": "M101" }
+    ] },
+  { "_id": "M102", "name": "Fuel and Combustion", "description": "Rocket fuels and combustion processes.", "course": "RS101",
+    "lessons": [
+      { "_id": "L103", "name": "Solid Fuels", "description": "Properties of solid propellants.", "module": "M102" },
+      { "_id": "L104", "name": "Liquid Fuels", "description": "Properties of liquid propellants.", "module": "M102" }
+    ] },
+  { "_id": "M201", "name": "Fundamentals of Aerodynamics", "description": "Airflow and pressure.", "course": "RS102",
+    "lessons": [
+      { "_id": "L201", "name": "Bernoulli's Principle", "description": "Pressure and velocity.", "module": "M201" },
+      { "_id": "L202", "name": "Lift and Drag", "description": "Forces on a wing.", "module": "M201" }
+    ] },
+  { "_id": "M202", "name": "Supersonic Flight", "description": "Flow beyond the speed of sound.", "course": "RS102",
+    "lessons": [
+      { "_id": "L203", "name": "Shock Waves", "description": "Formation of shock waves.", "module": "M202" }
+    ] },
+  { "_id": "M301", "name": "Spacecraft Structures", "description": "Frames, materials, and loads.", "course": "RS103",
+    "lessons": [
+      { "_id": "L301", "name": "Materials", "description": "Lightweight structural materials.", "module": "M301" }
+    ] },
+  { "_id": "M401", "name": "Kepler's Laws", "description": "The three laws of planetary motion.", "course": "RS104",
+    "lessons": [
+      { "_id": "L401", "name": "Elliptical Orbits", "description": "Orbit shapes.", "module": "M401" }
+    ] }
+]

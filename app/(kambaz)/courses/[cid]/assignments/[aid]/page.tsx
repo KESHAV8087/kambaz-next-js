@@ -1,10 +1,17 @@
 import Link from "next/link";
+import db from "../../../../database";
 
-export default function AssignmentEditor() {
+export default async function AssignmentEditor({
+  params,
+}: {
+  params: Promise<{ cid: string; aid: string }>;
+}) {
+  const { cid, aid } = await params;
+  const assignment = db.assignments.find((a) => a._id === aid && a.course === cid);
   return (
     <div id="wd-assignments-editor" className="max-w-2xl">
       <label htmlFor="wd-name" className="block font-medium mb-1">Assignment Name</label>
-      <input id="wd-name" defaultValue="A1 - ENV + HTML" className="w-full border border-gray-300 rounded px-3 py-2 mb-4" />
+      <input key={aid} id="wd-name" defaultValue={assignment?.title ?? ""} className="w-full border border-gray-300 rounded px-3 py-2 mb-4" />
 
       <textarea id="wd-description" rows={6} defaultValue={"The assignment is available online. Submit a link to the landing page of your Web application running on Vercel."} className="w-full border border-gray-300 rounded px-3 py-2 mb-4" />
 
@@ -58,8 +65,8 @@ export default function AssignmentEditor() {
 
       <hr className="my-4" />
       <div className="flex justify-end gap-2">
-        <Link href="/courses/1234/assignments" id="wd-cancel" className="px-4 py-2 bg-gray-200 rounded">Cancel</Link>
-        <Link href="/courses/1234/assignments" id="wd-save" className="px-4 py-2 bg-red-600 text-white rounded">Save</Link>
+        <Link href={`/courses/${cid}/assignments`} id="wd-cancel" className="px-4 py-2 bg-gray-200 rounded">Cancel</Link>
+        <Link href={`/courses/${cid}/assignments`} id="wd-save" className="px-4 py-2 bg-red-600 text-white rounded">Save</Link>
       </div>
     </div>
   );

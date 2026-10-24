@@ -1,11 +1,9 @@
 import Link from "next/link";
+import db from "../../../database";
 
-export default function Assignments() {
-  const items = [
-    { id: "123", name: "A1 - ENV + HTML", meta: "Multiple Modules | Not available until May 6 | Due May 13 | 100 pts" },
-    { id: "124", name: "A2 - CSS + BOOTSTRAP", meta: "Multiple Modules | Not available until May 13 | Due May 20 | 100 pts" },
-    { id: "125", name: "A3 - JAVASCRIPT + REACT", meta: "Multiple Modules | Not available until May 20 | Due May 27 | 100 pts" },
-  ];
+export default async function Assignments({ params }: { params: Promise<{ cid: string }> }) {
+  const { cid } = await params;
+  const assignments = db.assignments.filter((assignment) => assignment.course === cid);
   return (
     <div id="wd-assignments">
       <div className="flex items-center gap-2 mb-4">
@@ -18,12 +16,15 @@ export default function Assignments() {
         <span>40% of Total</span>
       </div>
       <ul id="wd-assignment-list" className="list-none p-0 border border-gray-300 rounded-b">
-        {items.map((a) => (
-          <li key={a.id} className="wd-assignment-list-item border-l-4 border-green-600 border-b border-gray-200 last:border-b-0 px-3 py-3">
-            <Link className="wd-assignment-link text-lg text-gray-900 font-medium hover:underline" href={`/courses/1234/assignments/${a.id}`}>
-              {a.name}
+        {assignments.map((assignment) => (
+          <li key={assignment._id} className="wd-assignment-list-item border-l-4 border-green-600 border-b border-gray-200 last:border-b-0 px-3 py-3">
+            <Link
+              className="wd-assignment-link text-lg text-gray-900 font-medium hover:underline"
+              href={`/courses/${cid}/assignments/${assignment._id}`}
+            >
+              {assignment.title}
             </Link>
-            <p className="text-sm text-gray-600">{a.meta}</p>
+            <p className="text-sm text-gray-600">Multiple Modules | 100 pts</p>
           </li>
         ))}
       </ul>
